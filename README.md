@@ -26,9 +26,8 @@ This is a simple Quotes API project that allows users to create, read, edit and 
 - Run `make up`
 
   - Running the above command will Start up the following Servers:
-    - Postgres Server --> http://localhost:5432
+    - Postgres Server --> http://localhost:5433
     - Django Development Server --> http://localhost:8000
-    - Redis Server --> http://localhost:6379
 
 - Run `make down` to stop the servers
 
