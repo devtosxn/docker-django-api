@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - ./src:/app
+      - demo-dev-static-data:/vol/web
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./.env
+    depends_on:
+      - db
+      - redis
+    networks:
+      - demo
+
+  db:
+    image: postgres:14.5-alpine3.16
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - demo-dev-db:/var/lib/postgresql/data
+    env_file:
+      - ./.env
+    networks:
+      - demo
+
+volumes:
+  demo-dev-static-data:
+  demo-dev-db:
+
+networks:
+    demo:
+      driver: bridge
