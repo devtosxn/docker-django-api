@@ -1,8 +1,8 @@
-# Demo API
+# Quotes API
 
 [![Black Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
-This is a Django API boilerplate project that uses Docker and Docker Compose for a consistent and easy development environment. It also includes Postgres for the database and the Django Rest Framework for building APIs. The project is written in Python and follows best practices for Django development. It can be used as a starting point for building your own Django-powered APIs.
+This is a simple Quotes API project that allows users to create, read, edit and update quotes. It uses Docker and Docker Compose for a consistent and easy development. It also includes Postgres for the database and the Django Rest Framework. The project is written in Python and follows best practices for Django development.
 
 ## Technologies
 

@@ -98,7 +98,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-SITE_NAME = "Demo API"  # Change this to your project name
+SITE_NAME = "Quotes API"
 
 SITE_ID = 1
 

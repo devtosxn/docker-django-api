@@ -6,7 +6,7 @@ from rest_framework import permissions
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Demo API",
+        title="Quotes API",
         default_version="v1",
         description="",
     ),
@@ -18,7 +18,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path(
-        "docs",
+        "",
         schema_view.with_ui("swagger", cache_timeout=0),
         name="swagger-schema-ui",
     ),
