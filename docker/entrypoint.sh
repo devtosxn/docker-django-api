@@ -13,7 +13,7 @@ fi
 
 # wait for postgres
 echo "Waiting for postgres..."
-while ! nc -z db 5433; do
+while ! nc -z db ${POSTGRES_PORT}; do
   sleep 0.1
 done
 
