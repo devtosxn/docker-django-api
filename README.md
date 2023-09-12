@@ -18,18 +18,18 @@ This is a simple Quotes API project that allows users to create, read, edit and 
 - create a .env file with the variables in the .env.example file
   - `cp env.example .env`
 
-- Run `make build`
+- Run `make build-dev`
 
   - Running the above command for the first time will download all docker-images and third party packages needed for the app.
   - **NB: This will take several minutes for the first build**
 
-- Run `make up`
+- Run `make up-dev`
 
   - Running the above command will Start up the following Servers:
     - Postgres Server --> http://localhost:5433
     - Django Development Server --> http://localhost:8000
 
-- Run `make down` to stop the servers
+- Run `make down-dev` to stop the servers
 
 - Run `make test` to run tests
 
